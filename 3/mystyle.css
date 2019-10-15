@@ -1,0 +1,47 @@
+.container{
+    width: 100%;
+}
+
+body{
+    margin: 0 0 0 0;
+    background: #68cdd5;
+}
+
+.intro{
+    font-size: 3rem;
+    width: 80%;
+}
+
+.left{
+    float: left;
+    width: 10rem;
+}
+
+.right{
+    float: right; 
+    width: 10rem;
+}
+
+.row1{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.row2{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.row3{
+    width: 80%;
+}
+
+.logo{
+    height: 10rem;
+}
