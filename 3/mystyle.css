@@ -7,41 +7,41 @@ body{
     background: #68cdd5;
 }
 
-.intro{
-    font-size: 3rem;
-    width: 80%;
-}
-
-.left{
-    float: left;
-    width: 10rem;
-}
-
-.right{
-    float: right; 
-    width: 10rem;
+.row1, .row2, .row3{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
 }
 
 .row1{
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    display: -webkit-flex;
     justify-content: center;
+}
+
+.row1 img{
+    height: 50px;
 }
 
 .row2{
-    margin-top: 100px;
-    width: 100%;
-    display: flex;
-    display: -webkit-flex;
     justify-content: center;
 }
 
-.row3{
+.intro{
     width: 80%;
+    color: white;
+    font-size: 17px;
 }
 
-.logo{
-    height: 10rem;
+.row3{
+    justify-content: space-between;
+}
+
+.left{
+    margin-left: 10%;
+    height: 50px;
+}
+
+.right{
+    margin-right: 10%;
+    height: 50px;
 }
