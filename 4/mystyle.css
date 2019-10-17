@@ -23,13 +23,13 @@ body{
 }
 
 #rightLabel{
-    margin-right: 30px;
+    margin-right: 20px;
     font-size: 17px;
     color: rgb(255, 255, 255);
 }
 
 #leftLabel{
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: 17px;
     color: rgb(255, 255, 255);
 }
@@ -37,9 +37,18 @@ body{
 input{
     width: 90%;
     height: 30px;
-    border: none;
     font-size: 14px;
     outline: none;
+    padding-left: 20px;
+    flex: 1;
+    border: none;
+}
+
+.line{
+    width: 20px;
+    height: 30px;
+    border-width: 0 1px 0 0;
+    border-style: solid;
 }
 
 #loginbutton{
@@ -55,9 +64,10 @@ input{
 
 img{
     height: 17px;
+    margin-left: 20px;
 }
 
-form div{
+#phone, #pwd{
     width: 100%;
     height: 44px;
     background: rgb(255, 255, 255);
@@ -65,7 +75,7 @@ form div{
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #forget{
