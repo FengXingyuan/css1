@@ -5,6 +5,7 @@
 body{
     margin: 0 0 0 0;
     background: #68cdd5;
+    padding-bottom: 100px;
 }
 
 .row1, .row2, .row3{
