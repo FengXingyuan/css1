@@ -39,6 +39,7 @@ input{
     height: 30px;
     border: none;
     font-size: 14px;
+    outline: none;
 }
 
 #loginbutton{
@@ -49,6 +50,7 @@ input{
     color: rgb(255, 255, 255);
     background: #5fc0cd;
     font-size: 20px;
+    outline: none;
 }
 
 img{
