@@ -1,0 +1,147 @@
+.container-fluid{
+    padding-top: 88px;
+    padding-bottom: 44px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#navBar{
+    height: 44px;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5fc0cd;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+#placementDiv{
+    width: 20px;
+    margin-left: 20px
+}
+
+#locaIcon{
+    height: 20px;
+    margin-right: 20px;
+}
+
+.filterRow{
+    height: 44px;
+    width: 100%;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #dddddd;
+    background: white;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 44px;
+    z-index: 2;
+}
+
+.separator{
+    height: 20px;
+    width: 1px;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    border-color: #dddddd;
+}
+
+.first, .second, .third{
+    width: 100%;
+    height: 17px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+
+.second, .third{
+    margin-top: 5px;
+}
+
+.second{
+    justify-content: space-between;
+}
+
+.first span, .third span{
+    margin-left: 5px;
+}
+
+.second span{
+    margin-left: 22px;
+}
+
+.dateIcon{
+    width: 17px;
+    vertical-align: middle;
+}
+
+.locationIcon{
+    width: 17px;
+    vertical-align: middle;
+}
+
+.arrow{
+    height: 20px;
+    vertical-align: middle;
+}
+
+span{
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.tabBar{
+    height: 44px;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    background: #f8fafb;
+}
+
+#mainPage, #myPage{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #5fc0cd;
+    font-size: 10px;
+}
+
+#mainPageIcon{
+    height: 20px;
+}
+
+#myIcon{
+    height: 20px;
+}
+
+#myPage{
+    color: #dddddd;
+}
+
+#write{
+    height: 34px;
+    width: 34px;
+    border-radius: 17px;
+    background: #5fc0cd;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#writeIcon{
+    height: 20px;
+}
