@@ -1,0 +1,123 @@
+body{
+    background: #29bde0;
+    padding-bottom: 100px;
+}
+
+#navBar{
+    height: 44px;
+    width: 100%;
+    background: #29bde0;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+
+#menuIcon{
+    width: 20px;
+    margin-left: 20px;
+}
+
+#closeIcon{
+    width: 20px;
+    
+}
+
+#navBar a{
+    margin-right: 20px;
+}
+
+#player{
+    height: 44px;
+    width: 100%;
+    background: #b9e9f5;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#triangle{
+    height: 0px;
+    width: 0px;
+    border-color: #b9e9f5 transparent transparent transparent;
+    border-width: 10px;
+    border-style: solid;
+    margin-left: 30px;
+}
+
+#playIcon{
+    height: 30px;
+}
+
+#description{
+    margin-left: 30px;
+    font-size: 14px;
+    color: white;
+}
+
+#mainView{
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.myBlock{
+    margin: 20px 20px 0 20px;
+    flex-grow: none;
+}
+
+.myBlock:hover img{
+    visibility: visible;
+}
+
+i{
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.avatar{
+    height: 100px;
+    width: 100px;
+    background: #f5c97b;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnGroup{
+    width: 100px;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+#tabBar{
+    width: 100%;
+    height: 100px;
+    background: #29bde0;
+    position: fixed;
+    bottom: 0px;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#killBtn{
+    width: 60%;
+    height: 44px;
+    background: #fbb435;
+    color: white;
+    border: none;
+}
