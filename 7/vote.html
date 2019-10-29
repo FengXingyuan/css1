@@ -11,6 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="vote.css" type="text/css">
     <title>作业7</title>
+    <script type="text/javascript" src="vote.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,8 @@
     </div>
     <div id="player">
         发言讨论结束，请大家投票
-        <img src="play.png" id="playIcon">
+        <img src="play.png" id="playIcon" onclick="playBgm()">
+        <audio src="music.mp3" id="bgm"></audio>
     </div>
     <div id="triangle"></div>
     <div id="description">
@@ -77,7 +79,10 @@
         <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
     </div>
     <div id="tabBar">
-        <button id="killBtn">投死</button>
+        <a href="result.html" >
+            <div id="killBtn">投死</div>
+        
+    </a>
     </div>
 
     <!-- Optional JavaScript -->
