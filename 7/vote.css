@@ -73,7 +73,7 @@ body{
     flex-grow: none;
 }
 
-.myBlock:hover img{
+.myBlock:hover .btnGroup{
     visibility: visible;
 }
 
@@ -99,7 +99,15 @@ i{
 .btnGroup{
     width: 100px;
     margin-top: 20px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
     visibility: hidden;
+}
+
+.btnGroup img{
+    height: 20px;
 }
 
 #tabBar{
