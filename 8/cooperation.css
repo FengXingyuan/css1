@@ -75,30 +75,25 @@ body{
     background: #fafafa;
 }
 
-#left{
-    width: 24%;
-    background: white;
-    margin-bottom: 200px;
-}
-
 #right{
-    width: 74%;
-    background: white;
-    margin-bottom: 200px;
+    
+    margin-bottom: 100px;
 }
 
 #sideTitle{
     height: 60px;
     border-bottom: 1px #aaa solid;
+    background: white;
 }
 
 #sideList{
-    padding-left: 30%;
-    height: 600px;
-    justify-content: space-evenly;
+    padding-left: 40%;
+    padding-bottom: 10px;
+    background: white;
 }
 
 #sideList li{
+    margin-top: 10px;
     list-style-type: circle;
     color: #ff650e;
 }
@@ -110,10 +105,16 @@ body{
 #rightTitle{
     padding: 30px 5% 30px 5%;
     border-bottom: 1px #aaa solid;
+    background: white;
+}
+
+#rightTitle img{
+    width: 100%;
 }
 
 #descrition{
     padding: 30px 5% 30px 5%;
+    background: white;
 }
 
 #foot{
@@ -143,3 +144,12 @@ body{
     color: white;
 }
 
+@media (max-width: 575.98px){
+    #banner{
+        height: 200px;
+    }
+
+    .myTab{
+        height: 44px;
+    }
+}
