@@ -112,20 +112,11 @@ body{
     border-bottom: 1px #aaa solid;
 }
 
-#rightTitle img{
-    width: 20%;
-}
-
-#rightTitle span{
-    width: 70%;
-}
-
 #descrition{
     padding: 30px 5% 30px 5%;
 }
 
 #foot{
-    height: 170px;
     background: #29b078;
 }
 
@@ -138,7 +129,12 @@ body{
 }
 
 #foot img{
-    height: 100px;
+    height: 80px;
+}
+
+.padding-t{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #beian{
