@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: #eff0f4;
+}
+
+#topBar {
+  height: 44px;
+  width: 100%;
+  background: #5fc0cd;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+#topBar a {
+  font-size: small;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#phoneInput,
+#pwdInput {
+  height: 44px;
+  width: 100%;
+  background: white;
+  margin-top: 10px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}
+#phoneInput div,
+#pwdInput div {
+  height: 20px;
+  width: 44px;
+  border-right: 1px #bababa solid;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+#phoneInput img,
+#pwdInput img {
+  height: 20px;
+}
+#phoneInput input,
+#pwdInput input {
+  border-width: 0;
+  margin-left: 10px;
+  outline: none;
+  width: -webkit-calc(100% - 55px);
+  width: -moz-calc(100% - 55px);
+  width: calc(100% - 55px);
+}
+
+#loginBtn {
+  width: 100%;
+  height: 44px;
+  background: #5fc0cd;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginBtn + a {
+  color: #5fc0cd;
+  float: right;
+}
+
+/*# sourceMappingURL=main.css.map */

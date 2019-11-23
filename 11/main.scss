@@ -1,0 +1,82 @@
+$themeColor: #5fc0cd;
+$lightColor: #bababa;
+$stdHeight: 44px;
+
+@mixin align-center {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+
+@mixin dynamic-width($a, $b){
+    width:-webkit-calc(#{$a} - #{$b});
+	width:-moz-calc(#{$a} - #{$b});
+	width:calc(#{$a} - #{$b});
+}
+
+body{
+    margin: 0;
+    background: #eff0f4;
+}
+
+#topBar{
+    height: $stdHeight;
+    width: 100%;
+    background: $themeColor;
+    @include align-center();
+    justify-content: space-between;
+    color: white;
+
+    a{
+        font-size: small;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@mixin row-input{
+    height: $stdHeight;
+    width: 100%;
+    background: white;
+    margin-top: 10px;
+    @include align-center();
+
+    div{
+        height: 20px;
+        width: 44px;
+        border-right: 1px #bababa solid;
+        @include align-center();
+        justify-content: center;
+    }
+
+    img{
+        height: 20px;
+    }
+
+    input{
+        border-width: 0;
+        margin-left: 10px;
+        outline: none;
+        @include dynamic-width(100%, 55px)
+    }
+}
+
+#phoneInput,
+#pwdInput{
+    @include row-input();
+}
+
+#loginBtn{
+    width: 100%;
+    height: $stdHeight;
+    background: $themeColor;
+    color: white;
+    margin-top: 20px;
+    @include align-center();
+    justify-content: center;
+}
+
+#loginBtn+a{
+    color: $themeColor;
+    float: right;
+}
