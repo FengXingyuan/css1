@@ -1,0 +1,265 @@
+#topBar{
+    background: #1d7ad9;
+    color: white;
+}
+
+#login div{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+#signup div{
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: white;
+    color: black;
+}
+
+#login div{
+    border-left: 1px white solid;
+}
+
+#navBar{
+    height: 80px;
+    background: #f9f9f9;
+    position: relative;
+}
+
+#navBar a{
+    position: relative;
+}
+
+#menuIcon{
+    display: none;
+}
+
+#navBar img{
+    height: 25px;
+}
+
+#menu{
+    visibility: hidden;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    top: 44px;
+}
+
+#menuIcon:hover+#menu{
+    visibility: visible;
+}
+
+.menuItems{
+    width: 200px;
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    border-bottom: 1px #f3f3f3 solid;
+    border-left: 1px #f3f3f3 solid;
+    border-right: 1px #f3f3f3 solid;
+}
+
+.myTab{
+    margin-left: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.myTab:hover{
+    background: #1d7ad9;
+    color: white;
+}
+
+.tabSeletor{
+    display: none;
+}
+
+.step{
+    height: 80px;
+    width: 13%;
+    position: relative;
+    font-size:14px;
+}
+
+.rowBar{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top:20px;
+    background: pink;
+    z-index: -1;
+}
+
+.round{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: pink;
+}
+
+h5{
+    border-left: 3px #1d7ad9 solid;
+    padding-left: 10px;
+}
+
+.blockTitle{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    height: 40px;
+    background: #f3f3f3;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #f3f3f3;
+}
+
+.blockTitle label{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+
+#boxShape,
+#boxSize,
+#material,
+#submitBtn{
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #f3f3f3;
+}
+
+.radioBtn{
+    margin-right: 20px;
+}
+
+.inputBox{
+    width: 50px;
+}
+
+.test{
+    background: wheat;
+}
+
+.stdMar{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.detailBtn{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    border: 1px #f3f3f3 solid;
+}
+
+.detailBtn:hover img{
+    visibility: visible;
+}
+
+.detailBtn img{
+    top: 40px;
+    width: 120px;
+    right: 0;
+    z-index: 2;
+    position: absolute;
+    visibility: hidden;
+}
+
+.detailSquare{
+    height: 20px;
+    width: 20px;
+    background: #1d7ad9;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.detailTri{
+    border-width: 6px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+#submitBtn{
+    height: 100px;
+}
+
+#submitBtn input{
+    background: #e15053;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#foot{
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+
+#foot div{
+    height: 100px;
+}
+
+#foot img{
+    height: 80px;
+}
+
+.padding-t{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#beian{
+    background: #1d7ad9;
+    height: 30px;
+    color: white;
+}
+
+@media (max-width: 767.98px){
+    .myTab{
+        font-size: 12px;
+    }
+
+    #navBar{
+        height: 44px;
+    }
+
+    #menuIcon{
+        display: block;
+    }
+
+    #navBar a{
+        display: none;
+    }
+
+    #login div,
+    #signup div{
+        height: 20px;
+    }
+
+    #topBar{
+        font-size: 12px;
+    }
+
+    .step{
+        width: 80px;
+    }
+}
