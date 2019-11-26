@@ -1,0 +1,174 @@
+$themeColor: #5fc0cd;
+$lightColor: #999;
+
+@mixin flex($justify, $align) {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: #{$justify};
+    align-items: #{$align};
+}
+
+@mixin widthCalc($a:100%, $b) {
+    width: calc(#{$a} - #{$b});
+    width:-webkit-calc(#{$a} - #{$b});
+	width:-moz-calc(#{$a} - #{$b});
+}
+
+body{
+    margin: 0;
+    padding-top: 44px;
+    padding-bottom: 49px;
+}
+
+#navBar{
+    @include flex(center, center);
+    position: fixed;
+    top: 0;
+    height: 44px;
+    width: 100%;
+    background: $themeColor;
+    color: white;
+    font-size: large;
+
+    #tri1{
+        height: 0;
+        width: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent white transparent transparent;
+        left: 10px;
+        top: 12px;
+        position: absolute;
+    }
+
+    #tri2{
+        height: 0;
+        width: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent $themeColor transparent transparent;
+        left: 13px;
+        top: 12px;
+        position: absolute;
+    }
+}
+
+#banner{
+    width: 100%;
+    height: 180px;
+    background: url("banner2.gif");
+    @include flex(start, center);
+
+    #avatar{
+        margin-left: 10px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background: url("avatar.jpg");
+        background-size: cover;
+    }
+
+    >div{
+        @include flex(center, center);
+        flex-direction: column;
+        margin-left: 10px;
+
+        >div{
+            width: 110px;
+            @include flex(space-between, center);
+            color: white;
+
+            img{
+                height: 15px;
+            }
+        }
+    }
+}
+
+#titleRow{
+    height: 44px;
+    width: 100%;
+    @include flex(end, center);
+
+    div{
+        @include widthCalc(100%, 20px);
+        border-left: 3px $themeColor solid;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+}
+
+#mainContent{
+    border-top: 1px $lightColor solid;
+    border-bottom: 1px $lightColor solid;
+    width: 100%;
+    @include flex(center, flex-end);
+    flex-direction: column;
+
+    .type1,
+    .type2{
+        height: 44px;
+        border-bottom: 1px $lightColor solid;
+        @include widthCalc(100%, 10px);
+        @include flex(start, center);
+
+        .left{
+            @include flex(start, center);
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: 1px $lightColor solid;
+        }
+
+        .right{
+            @include flex(start, center);
+            margin-left: 10px;
+        }
+    }
+
+    .type1{
+        img{
+            height: 15px;
+        }
+    }
+
+    .type2{
+        .left{
+            color: $lightColor;
+            white-space: nowrap;
+        }
+    }
+
+    #last{
+        border: none;
+    }
+}
+
+#bottomBar{
+    height: 49px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    @include flex(center, center);
+    background: white;
+
+    button{
+        height: 35px;
+        width: 70px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: $themeColor;
+        margin-left: 5px;
+        margin-right: 5px;
+        outline: none;
+    }
+
+    #message{
+        color: $themeColor;
+        background: white;
+    }
+
+    #contact{
+        color: white;
+        background: $themeColor;
+    }
+}
