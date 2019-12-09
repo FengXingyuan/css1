@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="list.css" type="text/css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center" id="topBar">
+            <div class="col-12 col-lg-8 d-flex justify-content-between">
+                <span>联系电话：110</span>
+                <div class="d-flex align-items-center">
+                    <img src="weixin.png">
+                    <img src="qq.png">
+                    <img src="weibo.png">
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center" id="navBar">
+            <div class="col-12 col-lg-8 d-flex justify-content-end">
+                <a href="main.html" for="tab1">
+                    <input type="radio" class="tabSeletor" id="tab1" name="tabGroup">
+                    <label class="d-flex justify-content-end align-items-center myTab">首页</label>
+                </a>
+                <a href="cooperation.html" for="tab2">
+                    <input type="radio" class="tabSeletor" id="tab2" name="tabGroup">
+                    <label class="d-flex justify-content-end align-items-center myTab">企业</label>
+                </a>
+                <a href="list.html" for="tab3">
+                    <input type="radio" class="tabSeletor" id="tab3" name="tabGroup" checked>
+                    <label class="d-flex justify-content-end align-items-center myTab">职位</label>
+                </a>
+                <a href="#" for="tab4">
+                    <input type="radio" class="tabSeletor" id="tab4" name="tabGroup">
+                    <label class="d-flex justify-content-end align-items-center myTab">关于</label>
+                </a>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-8 d-flex align-items-center" id="breadNav">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">首页</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">职位</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 d-flex align-items-center flex-wrap" id="filter">
+                <label style="font-size: small;" class="d-flex align-items-center">方向：</label>
+                <a>
+                    <input type="radio" class="radioFilter" id="option1" name="filter" checked>
+                    <label class="d-flex align-items-center myFilter" for="option1">全部职位</label>
+                </a>
+                <a>
+                    <input type="radio" class="radioFilter" id="option2" name="filter">
+                    <label class="d-flex align-items-center myFilter" for="option2">前端开发</label>
+                </a>
+                <a>
+                    <input type="radio" class="radioFilter" id="option3" name="filter">
+                    <label class="d-flex align-items-center myFilter" for="option3">后端开发</label>
+                </a>
+                <a>
+                    <input type="radio" class="radioFilter" id="option4" name="filter">
+                    <label class="d-flex align-items-center myFilter" for="option4">移动开发</label>
+                </a>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 myTitle d-flex align-items-center border-b">
+                <h6>前端开发</h6>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 d-flex justify-content-between flex-wrap">
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <i></i><i></i>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 myTitle d-flex align-items-center border-b">
+                <h6>前端开发</h6>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 d-flex justify-content-between flex-wrap">
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <i></i><i></i>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 myTitle d-flex align-items-center border-b">
+                <h6>前端开发</h6>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 d-flex justify-content-between flex-wrap">
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <i></i><i></i>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 myTitle d-flex align-items-center border-b">
+                <h6>前端开发</h6>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-8 d-flex justify-content-between flex-wrap">
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="myCard">
+                        <div class="row border-b no-gutters xh">
+                            <div class="col-5 d-flex justify-content-center align-items-center">
+                                <img class="avatar" src="head.png">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-around ">
+                                <h6>Web前端工程师</h6>
+                                <small>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">门槛</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">难度</small>
+                                <img class="star mar-l" src="star.png">
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b">
+                                <small class="mar-l weak-color">成长周期</small>
+                                <small class="mar-l em-color">1-3</small>
+                                <small>年</small>
+                            </div>
+                            <div class="col-6 d-flex align-items-center stdh border-b border-l">
+                                <small class="mar-l weak-color">稀缺程度</small>
+                                <small class="mar-l em-color">234</small>
+                                <small>个岗位</small>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-5 d-flex align-items-center justify-content-center border-b weak-color">
+                                薪资待遇
+                            </div>
+                            <div class="col-7 d-flex flex-column">
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                                <div class="d-flex justify-content-around align-items-center stdh border-b border-l">
+                                    <small>0-1年</small>
+                                    <small>5-10k/月</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh border-b">
+                            <span class="mar-l">有</span>
+                            <span class="em-color">123</span>
+                            <span>人在练习</span>
+                        </div>
+                        <div class="row  d-flex align-items-center no-gutters stdh weak-color">
+                            <small class="mar-l">在此之前你应该已经练习两年半</small>
+                        </div>
+                        <div class="hoverCard d-flex flex-column justify-content-around align-items-center">
+                            <span>蔡徐坤</span>
+                            <span>中国大陆男歌手、演员、词曲作家，出生于浙江温州，籍贯湖南怀化。2012年通过参加综艺节目《向上吧！少年》进入娱乐圈。随后赴美国留学，并加入学校的篮球队。2015年回国，先后参加真人秀节目《星动亚洲》第一季和第二季，并于2016年10月成功通过10人男子组合SWIN正式出道。在与依海文化提请解约后，他以个人练习生的身份参加爱奇艺《偶像练习生》，最终获得该节目第一名，并以NINE
+                                PERCENT之队长及C位出道
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <i></i><i></i>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center flex-wrap" id="foot">
+            <div class="col-12 col-md-3 col-lg-2 d-flex flex-column justify-content-between padding-t">
+                <span>技能树——改变你我</span>
+                <span>关于我们 | 联系我们 | 合作企业</span>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 d-flex flex-column justify-content-between padding-t">
+                <span>旗下网站</span>
+                <span>草船云孵化器 最强it特训营</span>
+                <span>泡泡卡丁车 王者荣耀</span>
+            </div>
+            <div class="col-lg-2 col-md-3 col-4 d-flex justify-content-center align-items-center padding-t">
+                <img src="qr.jpg">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center" id="beian">
+            <div class="col-lg-4 col-md-6 col-12">
+                <span>allrights reserve 备案号123456789</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

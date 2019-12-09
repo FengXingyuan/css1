@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Hello, world!</title>
+</head>
+
+<body onload="auto">
+  <div class="header">
+    <div class="header__inner auto-fit">
+      <label class="header__hot-line">客服热线：010-88888888</label>
+      <div class="header__social-media">
+        <a href="https://qq.com" class="header__a">
+          <img src="qq.png" class="header__a-icon">
+        </a>
+        <a href="https://weixin.com" class="header__a">
+          <img src="weixin.png" class="header__a-icon">
+        </a>
+        <a href="https://weibo.cn" class="header__a">
+          <img src="weibo.png" class="header__a-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-bar">
+    <div class="nav-bar__inner auto-fit">
+      <input type="radio" class="nav-bar__input" name="tab" id="index">
+      <label class="nav-bar__tabs" for="index" onclick="jumpTo('index.html')">主页</label>
+      <input type="radio" class="nav-bar__input" name="tab" id="list">
+      <label class="nav-bar__tabs" for="list" onclick="jumpTo('list.html')">职业</label>
+      <input type="radio" class="nav-bar__input" name="tab" id="cooperation">
+      <label class="nav-bar__tabs" for="cooperation" onclick="jumpTo('cooperation.html')">公司</label>
+      <input type="radio" class="nav-bar__input" name="tab" id="index">
+      <label class="nav-bar__tabs" for="index" onclick="jumpTo('index.html')">主页</label>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="banner__window">
+      <div class="banner__canvas">
+        <div class="banner__items"></div>
+        <div class="banner__items"></div>
+        <div class="banner__items"></div>
+      </div>
+    </div>
+    <div class="banner__prev" onclick="prev()">
+      <img src="next.png" class="banner__prev-icon">
+    </div>
+    <div class="banner__next" onclick="next()">
+      <img src="next.png" class="banner__next-icon">
+    </div>
+  </div>
+  <div class="features">
+    <div class="features__inner auto-fit no-gutter">
+      <div class="features__cards">
+        <img src="rocket.png" class="features__legend">
+        <h5>高效</h5>
+        <div class="features__description">两年半的练习时间学习唱跳rap篮球</div>
+      </div>
+      <div class="features__cards">
+        <img src="rocket.png" class="features__legend">
+        <h5>高效</h5>
+        <div class="features__description">两年半的练习时间学习唱跳rap篮球</div>
+      </div>
+      <div class="features__cards">
+        <img src="rocket.png" class="features__legend">
+        <h5>高效</h5>
+        <div class="features__description">两年半的练习时间学习唱跳rap篮球</div>
+      </div>
+      <div class="features__cards features__cards-last">
+        <div class="features__last-title">
+          <img class="features__head-icon" src="head.png">
+          12400
+        </div>
+        累计在线练习人数
+        <div class="features__last-title">
+          <img class="features__head-icon" src="head.png">
+          12400
+        </div>
+        累计在线练习人数
+      </div>
+    </div>
+  </div>
+  <div class="title">
+    <h5>如何学习</h5>
+  </div>
+  <div class="process">
+    <div class="process__inner auto-fit no-gutter">
+      <div class="process__steps">
+        <div class="arrow"></div>
+        <div class="process__serial-number">1</div>
+        <div class="process__description">匹配自己的位置，寻找合适自己的练习方向</div>
+      </div>
+      <div class="process__steps">
+        <div class="arrow"></div>
+        <div class="process__serial-number">1</div>
+        <div class="process__description">匹配自己的位置，寻找合适自己的练习方向</div>
+      </div>
+      <div class="process__steps">
+        <div class="arrow"></div>
+        <div class="process__serial-number">1</div>
+        <div class="process__description">匹配自己的位置，寻找合适自己的练习方向</div>
+      </div>
+      <div class="process__steps">
+        <div class="arrow"></div>
+        <div class="process__serial-number">1</div>
+        <div class="process__description">匹配自己的位置，寻找合适自己的练习方向</div>
+      </div>
+      <div class="process__steps">
+        <div class="arrow"></div>
+        <div class="process__serial-number">1</div>
+        <div class="process__description">匹配自己的位置，寻找合适自己的练习方向</div>
+      </div>
+      <div class="process__steps">
+        <div class="arrow"></div>
+        <div class="process__serial-number">1</div>
+        <div class="process__description">匹配自己的位置，寻找合适自己的练习方向</div>
+      </div>
+      <div class="process__steps">
+        <div class="arrow"></div>
+        <div class="process__serial-number">1</div>
+        <div class="process__description">匹配自己的位置，寻找合适自己的练习方向</div>
+      </div>
+      <div class="process__steps">
+        <div class="arrow"></div>
+        <div class="process__serial-number">1</div>
+        <div class="process__description">匹配自己的位置，寻找合适自己的练习方向</div>
+      </div>
+    </div>
+  </div>
+  <div class="title">
+    <h5>优秀练习生展示</h5>
+  </div>
+  <div class="exhibition">
+    <div class="exhibition__window auto-fit">
+      <div class="exhibition__canvas">
+        <div class="exhibition__block">
+          <div class="exhibition__items">
+            <div class="exhibition__avatar">
+            </div>
+            <h5>蔡徐坤</h5>
+            <div class="exhibition__intro">
+              练习两年半，必杀技：triple crossover between legs
+            </div>
+          </div>
+        </div>
+        <div class="exhibition__block">
+          <div class="exhibition__items">
+            <div class="exhibition__avatar">
+            </div>
+            <h5>蔡徐坤</h5>
+            <div class="exhibition__intro">
+              练习两年半，必杀技：triple crossover between legs
+            </div>
+          </div>
+        </div>
+        <div class="exhibition__block">
+          <div class="exhibition__items">
+            <div class="exhibition__avatar">
+            </div>
+            <h5>蔡徐坤</h5>
+            <div class="exhibition__intro">
+              练习两年半，必杀技：triple crossover between legs
+            </div>
+          </div>
+        </div>
+        <div class="exhibition__block">
+          <div class="exhibition__items">
+            <div class="exhibition__avatar">
+            </div>
+            <h5>蔡徐坤</h5>
+            <div class="exhibition__intro">
+              练习两年半，必杀技：triple crossover between legs
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="title">
+    <h5>战略合作企业 </h5>
+  </div>
+  <div class="partner">
+    <div class="partner__inner auto-fit">
+      <img class="partner__img" src="baidu.png">
+      <img class="partner__img" src="m.png">
+      <img class="partner__img" src="alibaba.png">
+      <img class="partner__img" src="apple.png">
+      <img class="partner__img" src="g.png">
+      <img class="partner__img" src="tencent.png">
+    </div>
+  </div>
+  <div class="friend-link">
+    <h5>友情链接</h5>
+    <div class="friend-link__inner auto-fit">
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+      <li class="friend-link__li">找工作</li>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__inner auto-fit no-gutter">
+      <div class="footer__join">
+        <div>技能树——改变你我</div>
+        <div>关于我们|联系我们|合作企业</div>
+      </div>
+      <div class="footer__sites">
+        <div>旗下网站</div>
+        <div>王者荣耀</div>
+      </div>
+      <div class="footer__scan">
+        <div class="footer__qr-code"></div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="copyright__inner">copyright allrights reserve 京备案号9999999</div>
+  </div>
+</body>
+
+</html>

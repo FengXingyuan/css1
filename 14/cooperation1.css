@@ -1,0 +1,155 @@
+body{
+    background: #fafafa;
+}
+
+#topBar{
+    height: 40px;
+}
+
+#topBar img{
+    margin-left: 10px;
+    height: 20px;
+}
+
+#navBar{
+    background: #29b078;
+}
+
+#navBar a{
+    position: relative;
+}
+
+.myTab{
+    height: 100px;
+    width: 80px;
+    color: white;
+    font-size: 14px;
+}
+
+.myTab::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 36px;
+    height: 3px;
+    width: 60px;
+    background: white;
+    visibility: hidden;
+}
+
+.myTab:hover::after{
+    animation-name: tabs;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: tabs;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes tabs{
+    from {visibility: visible;}
+    to {left: 26px; height: 3px; width: 80px; visibility: visible;}
+}
+
+@-webkit-keyframes tabs{
+    from {visibility: visible;}
+    to {left: 26px; height: 3px; width: 80px; visibility: visible;}
+}
+
+.tabSeletor{
+    display: none;
+}
+
+.tabSeletor:checked ~ .myTab::after{
+    left: 26px; height: 3px; width: 80px; visibility: visible;
+}
+
+#banner{
+    height: 250px;
+    background: url(banner2.jpg);
+}
+
+.breadcrumb{
+    background: #fafafa;
+}
+
+#right{
+    
+    margin-bottom: 100px;
+}
+
+#sideTitle{
+    height: 60px;
+    border-bottom: 1px #aaa solid;
+    background: white;
+}
+
+#sideList{
+    padding-left: 40%;
+    padding-bottom: 10px;
+    background: white;
+}
+
+#sideList li{
+    margin-top: 10px;
+    list-style-type: circle;
+    color: #ff650e;
+}
+
+#sideList span{
+    color: #29b078;
+}
+
+#rightTitle{
+    padding: 30px 5% 30px 5%;
+    border-bottom: 1px #aaa solid;
+    background: white;
+}
+
+#rightTitle img{
+    width: 100%;
+}
+
+#descrition{
+    padding: 30px 5% 30px 5%;
+    background: white;
+}
+
+#foot{
+    background: #29b078;
+}
+
+#foot div{
+    height: 100px;
+}
+
+#foot span{
+    color: white;
+}
+
+#foot img{
+    height: 80px;
+}
+
+.padding-t{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#beian{
+    background: #29b078;
+    height: 30px;
+    color: white;
+}
+
+@media (max-width: 575.98px){
+    #banner{
+        height: 200px;
+    }
+
+    .myTab{
+        height: 44px;
+    }
+}

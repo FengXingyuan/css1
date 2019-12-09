@@ -1,0 +1,189 @@
+@import "flex", "col";
+
+$theme-color: #29b078;
+
+.auto-fit{
+    @include col(8);
+}
+
+.no-gutter{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body{
+    background: #fafafa;
+}
+
+.header{
+    @include flex;
+    width: 100vw;
+
+    &__inner{
+        @include flex($justify: space-between);
+        height: 40px;
+    }
+
+    &__hot-line{
+        font-size: 12px;
+        color: $theme-color;
+        line-height: 0;
+    }
+
+    &__social-media{
+        @include flex;
+    }
+
+    &__a{
+        @include flex;
+        margin-left: 15px;
+    }
+
+    &__a-icon{
+        height: 20px;
+    }
+}
+
+.nav-bar{
+    @include flex;
+    width: 100vw;
+    background: $theme-color;
+
+    &__inner{
+        @include flex($justify: flex-end);
+    }
+
+    &__input{
+        display: none;
+    }
+
+    &__tabs{
+        @include flex;
+        height: 88px;
+        margin-left: 20px;
+        color: white;
+    }
+}
+
+.banner{
+    width: 100vw;
+    height: 300px;
+    @media (max-width: 1023.98px){
+        height: 150px;
+    }
+    background: url("banner2.jpg");
+    background-size: cover;
+}
+
+.main-view{
+    @include flex;
+    margin-top: 60px;
+
+    &__inner{
+        @include flex($align:flex-start);
+    }
+
+    &__side{
+        @include flex;
+        @include col(2);
+        flex-direction: column;
+        
+        &-title{
+            @include flex;
+            width: 100%;
+            height: 40px;
+            background: white;
+            border-bottom: 1px whitesmoke solid;
+        }
+
+        &-list{
+            @include flex;
+            width: 100%;         
+            background: white;
+
+            ul{
+                @include flex(space-between);
+                flex-direction: column;
+                height: 500px;
+            }
+        }
+    }
+
+    &__content{
+        @include flex;
+        @include col(6);
+        flex-direction: column;
+        background: white;
+
+        &-top{
+            @include flex(space-around);
+            border-bottom: 1px whitesmoke solid;
+        }
+
+        &-description{
+            padding: 15px;
+        }
+    }
+
+    &__logo{
+        @include col(1);
+        height: 100px;
+        background: url("tencent.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__outline{
+        @include col(4);
+    }
+}
+
+.footer{
+    @include flex;
+    width: 100vw;
+    margin-top: 60px;
+    background: $theme-color;
+
+    &__inner{
+        @include flex;
+    }
+
+    &__join{
+        @include flex(space-around,flex-start);
+        @include col(2);
+        flex-direction: column;
+        height: 150px;
+        color: white;
+    }
+
+    &__sites{
+        @include flex(space-around,flex-start);
+        @include col(4);
+        flex-direction: column;
+        height: 150px;
+        color: white;
+    }
+
+    &__scan{
+        @include flex(flex-end);
+        @include col(2);
+        height: 150px;
+    }
+
+    &__qr-code{
+        background: url("qr.jpg");
+        height: 80px;
+        width: 80px;
+        background-size: contain;
+    }
+}
+
+.copyright{
+    @include flex;
+    width: 100vw;
+
+    &__inner{
+        @include col(4);
+    }
+}

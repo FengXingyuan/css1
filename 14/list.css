@@ -1,0 +1,212 @@
+body{
+    background: #fafafa;
+}
+
+#topBar{
+    height: 40px;
+}
+
+#topBar img{
+    margin-left: 10px;
+    height: 20px;
+}
+
+#navBar{
+    background: #29b078;
+}
+
+#navBar a{
+    position: relative;
+}
+
+.myTab{
+    height: 100px;
+    width: 80px;
+    color: white;
+    font-size: 14px;
+}
+
+.myTab::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 36px;
+    height: 3px;
+    width: 60px;
+    background: white;
+    visibility: hidden;
+}
+
+.myTab:hover::after{
+    animation-name: tabs;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: tabs;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes tabs{
+    from {visibility: visible;}
+    to {left: 26px; height: 3px; width: 80px; visibility: visible;}
+}
+
+@-webkit-keyframes tabs{
+    from {visibility: visible;}
+    to {left: 26px; height: 3px; width: 80px; visibility: visible;}
+}
+
+.tabSeletor{
+    display: none;
+}
+
+.tabSeletor:checked ~ .myTab::after{
+    left: 26px; height: 3px; width: 80px; visibility: visible;
+}
+
+.breadcrumb{
+    background: #fafafa;
+    padding-left: 0;
+}
+
+#filter{
+    height: 50px;
+    border-bottom: 1px #ddd solid;
+}
+
+#filter a{
+    position: relative;
+    margin-left: 10px;
+    font-size: small;
+}
+
+.radioFilter{
+    display: none;
+}
+
+.myFilter::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 55px;
+    left: 0px;
+    background: #29b078;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.myFilter:hover::after{
+    visibility: visible;
+}
+
+.myFilter:hover{
+    color: white;
+}
+
+.radioFilter:checked + .myFilter::after{
+    visibility: visible;
+}
+
+.radioFilter:checked + label{
+    color: white;
+}
+
+.myTitle{
+    height: 80px;
+}
+
+.myCard{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: white;
+}
+
+.myCard:hover .hoverCard{
+    visibility: visible;
+}
+
+.hoverCard{
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    visibility: hidden;
+}
+
+i{
+    width: 31%;
+}
+
+.stdh{
+    height: 40px;
+}
+
+.xh{
+    height: 170px;
+}
+
+.mar-l{
+    margin-left: 10px;
+}
+
+.em-color{
+    color: red;
+}
+
+.weak-color{
+    color: #aaa;
+}
+
+.star{
+    height: 15px;
+}
+
+.border-b{
+    border-bottom: 1px #ddd solid;
+}
+
+.border-l{
+    border-left: 1px #ddd solid;
+}
+
+.avatar{
+    width: 90%;
+}
+
+#foot{
+    margin-top: 100px;
+
+    background: #29b078;
+}
+
+#foot div{
+    height: 100px;
+}
+
+#foot span{
+    color: white;
+}
+
+#foot img{
+    height: 80px;
+}
+
+.padding-t{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#beian{
+    background: #29b078;
+    height: 30px;
+    color: white;
+}
+

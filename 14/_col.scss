@@ -1,0 +1,26 @@
+@mixin col($width){
+    @media (max-width: 567.98px){
+        width: calc(50vw * #{$width});
+    }
+
+    @media (min-width: 568px) and (max-width: 767.98px){
+        width: calc(100vw / 3 * #{$width});
+    }
+
+    @media (min-width: 768px) and (max-width: 1023.98px){
+        width: calc(25vw * #{$width});
+    }
+
+    @media (min-width: 1024px) and (max-width: 1199.98px){
+        width: calc(100vw / 6 * #{$width});
+    }
+
+    @media (min-width: 1200px){
+        width: calc(100vw / 12 * #{$width});
+    }
+
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+}

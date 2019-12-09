@@ -1,0 +1,317 @@
+@import "flex", "col";
+
+$theme-color: #29b078;
+
+.auto-fit{
+    @include col(8);
+}
+
+.no-gutter{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body{
+    background: #fafafa;
+}
+
+.header{
+    @include flex;
+    width: 100vw;
+
+    &__inner{
+        @include flex($justify: space-between);
+        height: 40px;
+    }
+
+    &__hot-line{
+        font-size: 12px;
+        color: $theme-color;
+        line-height: 0;
+    }
+
+    &__social-media{
+        @include flex;
+    }
+
+    &__a{
+        @include flex;
+        margin-left: 15px;
+    }
+
+    &__a-icon{
+        height: 20px;
+    }
+}
+
+.nav-bar{
+    @include flex;
+    width: 100vw;
+    background: $theme-color;
+
+    &__inner{
+        @include flex($justify: flex-end);
+    }
+
+    &__input{
+        display: none;
+    }
+
+    &__tabs{
+        @include flex;
+        height: 88px;
+        margin-left: 20px;
+        color: white;
+    }
+}
+
+.banner{
+    @include flex($justify: space-between);
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    @media (max-width: 1023.98px){
+        height: 250px;
+    }
+
+    &__window{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    &__canvas{
+        display: flex;
+        position: absolute;
+        left: 0;   
+        width: 300%;
+        height: 100%;
+        transition-duration: 0.8s;
+    }
+
+    &__items{
+        background: url("1.jpg");
+        background-size: cover;
+        width: calc(100% / 3);
+        height: 100%;
+    }
+
+    &__prev{
+        margin-left: 10%;
+        
+        &-icon{
+            transform: rotate(180deg);
+            height: 30px;
+        }
+    }
+
+    &__next{
+        margin-right: 10%;
+
+        &-icon{
+            height: 30px;
+        }
+    }
+}
+
+.features{
+    @include flex;
+    width: 100vw;
+
+    &__inner{
+        @include flex;
+    }
+
+    &__cards{
+        @include col(2);
+        @include flex($justify: space-between);
+        flex-direction: column;
+        margin-top: 60px;
+        height: 188px;
+    }
+
+    &__legend{
+        height: 50px;
+    }
+
+    &__description{
+        display: block;
+        width: 80%;
+    }
+
+    &__last-title{
+        @include flex($justify: flex-start);
+        color: $theme-color;
+        font-size: 14px;
+    }
+
+    &__head-icon{
+        height: 14px;
+    }
+}
+
+.title{
+    @include flex;
+    margin-top: 60px;
+}
+
+.process{
+    @include flex;
+    width: 100vw;
+
+    &__inner{
+        @include flex(flex-start);
+    }
+
+    &__steps{
+        @include flex($justify: space-evenly);
+        @include col(2);
+        margin-top: 30px;
+        height: 100px;
+    }
+
+    .arrow{
+        height: 30px;
+        width: 30px;
+        background: url("arrow.png");
+        background-size: contain;
+    }
+
+    &__serial-number{
+        @include flex;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        background: white;
+    }
+
+    &__description{
+        width: 50%;
+    }
+}
+
+.exhibition{
+    @include flex;
+    width: 100vw;
+
+    &__window{
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    &__canvas{
+        position: absolute;
+        display: flex;
+    }
+
+    &__block{
+        @include col(2);
+        @include flex;
+    }
+
+    &__items{
+        @include flex(space-evenly);
+        flex-direction: column;
+        width: 90%;
+        height: 300px;
+        background: white;
+    }
+
+    &__avatar{
+        height: 80px;
+        width: 80px;
+        border-radius: 40px;
+        background: url("avatar.jpg");
+        background-size: cover;
+    }
+
+    &__intro{
+        width: 90%;
+    }
+}
+
+.partner{
+    @include flex;
+    width: 100vw;
+
+    &__inner{
+        @include flex(space-evenly);
+        padding: 15px;
+        background: white;
+    }
+
+    &__img{
+        height: 80px;
+    }
+}
+
+.friend-link{
+    @include flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 60px;
+    background: white;
+    padding-bottom: 20px;
+
+    &__inner{
+        @include flex(flex-start);
+    }
+
+    &__li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.footer{
+    @include flex;
+    width: 100vw;
+    background: $theme-color;
+
+    &__inner{
+        @include flex;
+    }
+
+    &__join{
+        @include flex(space-around,flex-start);
+        @include col(2);
+        flex-direction: column;
+        height: 150px;
+        color: white;
+    }
+
+    &__sites{
+        @include flex(space-around,flex-start);
+        @include col(4);
+        flex-direction: column;
+        height: 150px;
+        color: white;
+    }
+
+    &__scan{
+        @include flex(flex-end);
+        @include col(2);
+        height: 150px;
+    }
+
+    &__qr-code{
+        background: url("qr.jpg");
+        height: 80px;
+        width: 80px;
+        background-size: contain;
+    }
+}
+
+.copyright{
+    @include flex;
+    width: 100vw;
+
+    &__inner{
+        @include col(4);
+    }
+}
